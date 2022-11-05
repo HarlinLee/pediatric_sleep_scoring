@@ -1,6 +1,6 @@
 [Automatic Sleep Scoring from Large-scale Multi-channel Pediatric EEG](https://arxiv.org/pdf/2207.06921.pdf)
 ---
-by Harlin Lee, Aaqib Saeed, Andrea L. Bertozzi
+by Harlin Lee, Aaqib Saeed
 
 ### Abstract
 Sleep is particularly important to the health of infants, children, and adolescents, and sleep scoring is the first step to accurate diagnosis and treatment of potentially life-threatening conditions. But pediatric sleep is severely under-researched compared to adult sleep in the context of machine learning for health, and sleep scoring algorithms developed for adults usually perform poorly on infants. Here, we present the first automated sleep scoring results on a recent large-scale pediatric sleep study dataset that was collected during standard clinical care. We develop a transformer-based model that learns to classify five sleep stages from millions of multi-channel electroencephalogram (EEG) sleep epochs with 78% overall accuracy. Further, we conduct an in-depth analysis of the model performance based on patient demographics and EEG channels. The results point to the growing need for machine learning research on pediatric sleep.
