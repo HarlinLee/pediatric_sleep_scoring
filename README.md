@@ -16,6 +16,8 @@ Get access to [NCH Sleep DataBank](https://sleepdata.org/datasets/nchsdb).
 
 Preprocess and convert the data to TFRecords format or see an example [here](https://github.com/liboyue/sleep_study) to use Pytorch.
 
+We provide train, validation and test splits in the `splits` directory. The `file_path` has following structure `<study_pat_id>_<sleep_study_id>_<eeg_example_index>_<age_group>.<ext>`, where `<ext>` can be ignored. `pat_id` is patient id, and `age_group` represents age group the patient belongs to.
+
 #### Training: 
 ```
 python3 main.py
