@@ -23,7 +23,7 @@ python3 main.py
 
 ### Citation
 ```
-@inproceedings{Lee2022AutomaticSS,
+@inproceedings{Lee2022Automatic,
   title={Automatic Sleep Scoring from Large-scale Multi-channel Pediatric EEG},
   author={Harlin Lee and Aaqib Saeed},
   journal={arXiv preprint arXiv:2207.06921},
