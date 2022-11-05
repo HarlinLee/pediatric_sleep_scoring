@@ -1,0 +1,2 @@
+tensorflow-gpu==2.9
+tensorflow-addons
