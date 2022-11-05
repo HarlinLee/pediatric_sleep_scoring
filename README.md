@@ -12,11 +12,11 @@ pip3 install -r requirements.txt
 ```
 
 #### Dataset 
-Get access to [NCH Sleep DataBank](https://sleepdata.org/datasets/nchsdb).
+Get access to the [NCH Sleep DataBank](https://www.nature.com/articles/s41597-022-01545-6) from [NSRR](https://sleepdata.org/datasets/nchsdb) or [Physionet](https://physionet.org/content/nch-sleep/3.1.0/).
 
-Preprocess and convert the data to TFRecords format or see an example [here](https://github.com/liboyue/sleep_study) to use Pytorch.
+Extract 30 second EEG examples into numpy arrays using the code [here](https://github.com/liboyue/sleep_study/blob/master/sleep_study/data.py#L67), and convert the data to the TFRecords format. Or see an example [here](https://github.com/liboyue/sleep_study) to use Pytorch.
 
-We provide train, validation and test splits in the `splits` directory (see splits.zip). The `file_path` has following structure `<study_pat_id>_<sleep_study_id>_<eeg_example_index>_<age_group>.<ext>`, where `<ext>` can be ignored. `pat_id` is patient id, and `age_group` represents age group the patient belongs to.
+We provide train, validation and test splits in the `splits` directory (see splits.zip). The `file_path` has the following structure `<study_pat_id>_<sleep_study_id>_<eeg_example_index>_<age_group>.<ext>`, where `<ext>` can be ignored. `study_pat_id` and `sleep_study_id` correspond to those from the NCH Sleep DataBank, and together define one PSG file. `eeg_example_index` is the index into an EEG example from that particular sleep study file. `age_group` represents age group the patient belongs to.
 
 #### Training: 
 ```
